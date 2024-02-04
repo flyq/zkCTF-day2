@@ -9,10 +9,12 @@ template Level1() {
     component lt = LessThan(201);
     lt.in[0] <== in;
     lt.in[1] <== 6026017665971213533282357846279359759458261226685473132380160;
+    log(lt.in[1])
     lt.out === out;
     component gt = GreaterThan(201);
     gt.in[0] <== in;
     gt.in[1] <== -401734511064747568885490523085290650630550748445698208825344;
+    log(gt.in[1])
     gt.out === out;
 }
 
